@@ -34,7 +34,6 @@
 
 - **Direct Engagement:** The contact section includes a streamlined form powered by Web3Forms, offering a reliable and direct channel for visitors to connect.
 
-- **Web3Forms** [Link]
-- https://web3forms.com/
+- **Web3Forms** [Link] https://web3forms.com/
 
   
