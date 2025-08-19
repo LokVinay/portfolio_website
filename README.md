@@ -6,6 +6,12 @@
 
   <center><img width="1235" height="812" alt="image" src="https://github.com/user-attachments/assets/9bbc1977-cb11-4c40-92c9-de5a0e709a0d" /></center>
 
+  # Live Demo:
+  - Git hub [Link] https://lokvinay.github.io/portfolio_website/
+  - Vercel  [Link] https://portfolio-website-xi-teal.vercel.app/
+  - Netlify [Link] https://mellifluous-dasik-01c797.netlify.app/
+
+
 # Technology Stack:
 - The portfolio is crafted using a focused and robust set of front-end technologies:
 
