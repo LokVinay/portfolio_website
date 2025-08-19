@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* --- Dark Theme Styles --- */
+body.dark {
+    background-color: #0d121c;
+    color: #d1d5db;
+}
+
+.dark .bg-gradient-hero {
+    background: linear-gradient(135deg, #1f2937 0%, #0d121c 100%);
+}
+
+.dark .bg-gradient-section {
+    background: linear-gradient(135deg, #0d121c 0%, #1f2937 100%);
+}
+
+.dark .text-gradient-title {
+    background-image: linear-gradient(45deg, #4f46e5, #8b5cf6);
+}
+
+.dark .bg-gray-800 {
+    background-color: #1f2937;
+}
+
+.dark .bg-gray-700 {
+    background-color: #374151;
+}
+
+.dark .bg-gray-600 {
+    background-color: #4b5563;
+}
+
+/* --- Light Theme Styles --- */
+body.light {
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+.light .bg-gradient-hero {
+    background: linear-gradient(135deg, #e5e7eb 0%, #d1d5db 100%);
+}
+
+.light .bg-gradient-section {
+    background: linear-gradient(135deg, #d1d5db 0%, #e5e7eb 100%);
+}
+
+.light .text-gradient-title {
+    background-image: linear-gradient(45deg, #8b5cf6, #4f46e5);
+}
+
+.light .bg-gray-800 {
+    background-color: #f9fafb;
+}
+
+.light .bg-gray-700 {
+    background-color: #e5e7eb;
+}
+
+.light .bg-gray-600 {
+    background-color: #d1d5db;
+}
+
+.light .text-gray-200 {
+    color: #1f2937;
+}
+
+.light .text-gray-300 {
+    color: #4b5563;
+}
+
+.light .text-gray-400 {
+    color: #6b7280;
+}
+
+/* Smooth section transitions on scroll */
+.section-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Loading indicator animation */
+.loading-dot {
+    animation: bounce 1s infinite ease-in-out;
+}
+
+.loading-dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loading-dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    0%, 80%, 100% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(1.0);
+    }
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#hero-content {
+    position: relative;
+    z-index: 20;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: 15% auto;
+    padding: 24px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 12px;
+    position: relative;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Ensure modal content adapts to theme */
+body.light .modal-content {
+    background-color: #f9fafb;
+    color: #1f2937;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
